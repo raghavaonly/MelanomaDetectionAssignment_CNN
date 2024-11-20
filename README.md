@@ -26,20 +26,19 @@ To develop a CNN-based model capable of accurately detecting melanoma by analyzi
 **Build a multiclass classification model using TensorFlow.**
 Provide a solution that reduces the manual effort in melanoma diagnosis by assisting dermatologists with reliable image evaluations.
 Dataset Overview
-The dataset comprises 2,357 images representing malignant and benign skin conditions, sourced from the International Skin Imaging Collaboration (ISIC). The data includes several categories of skin lesions:
+The dataset comprises 2,357 images representing malignant and benign skin conditions, sourced from the International Skin Imaging Collaboration (ISIC). **The data includes several categories of skin lesions:**
+  **Actinic Keratosis
+  Basal Cell Carcinoma
+  Dermatofibroma
+  Melanoma
+  Nevus
+  Pigmented Benign Keratosis
+  Seborrheic Keratosis
+  Squamous Cell Carcinoma
+  Vascular Lesions**
+  Most classes are balanced, except for melanomas and moles, which are slightly overrepresented.
 
-**Actinic Keratosis
-Basal Cell Carcinoma
-Dermatofibroma
-Melanoma
-Nevus
-Pigmented Benign Keratosis
-Seborrheic Keratosis
-Squamous Cell Carcinoma
-Vascular Lesions**
-Most classes are balanced, except for melanomas and moles, which are slightly overrepresented.
-
-Model Building Process
+**Model Building Process**
 **Data Preprocessing:**
 
 Path definition for train/test images.
@@ -50,6 +49,7 @@ Dataset splitting for training and validation.
 Build a custom CNN model.
 Compile with appropriate optimizer and loss functions.
 Train the model while visualizing its performance.
+
 **Addressing Class Imbalance:**
 
 Use data augmentation and rebalancing techniques.
